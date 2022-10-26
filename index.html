@@ -4,59 +4,76 @@
     <meta charset="utf-8">
     <title>Journalizing</title>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
     <link rel="icon" href="">
   </head>
   <body>
+    
 
     <header>
 
       <div class="logo">
-        <a href="file:///C:/Users/system2020/Desktop/%ED%86%B5%EC%82%ACA/%EC%A0%80%EB%84%90%EB%9D%BC%EC%9D%B4%EC%A7%95/index.html">
+        <a href="https://sweet-scone-c15a52.netlify.app/">
           <img src="img/logo.png" alt="로고">
+          
         </a>
-        <a href="file:///C:/Users/system2020/Desktop/%ED%86%B5%EC%82%ACA/%EC%A0%80%EB%84%90%EB%9D%BC%EC%9D%B4%EC%A7%95/index.html">
+        <a href="https://sweet-scone-c15a52.netlify.app/">
           <p>Journalyzing</p>
         </a>
       </div>
-      <p class="subjectTitle">홈</p>
+      <p class="subjectTitle">최신기사</p>
 
-      <div class="searchMenu">
-        <input class="searchBar" type="text">
-        <input class="searchButton" type="button" value="검색">
+      <div class="themeSearchMenu">
+        <input class="addButton" type="button" value="+">
+        <input class="addBar" type="text" placeholder="주제 입력">
+        <input class="themeSearchButton" type="button" value="검색">
+        <div class="themeSearchBar">
+        </div>
+      </div>
+      <div class="keywordSearchMenu">
+        <input class="keywordSearchButton" type="button" value="검색">
+        <input class="keywordSearchBar" type="text" placeholder="키워드 입력"></div>
       </div>
 
       <div class="analysisMenu">
 
         <div>
-          <p><a>뉴스분류</a></p>
-          <div>
+          <p><a>뉴스 목록</a></p>
+          <div class="newsLists">
             <div>
-              <p><a>주제</a></p>
+              <p><a>헤드라인</a></p>
             </div>
 
             <div>
-              <p><a>사건</a></p>
+              <p><a>최신기사</a></p>
             </div>
 
             <div>
-              <p><a>인물</a></p>
+              <p><a>날짜별</a></p>
+            </div>
+
+            <div>
+              <p><a>언론사별</a></p>
+            </div>
+
+            <div>
+              <p><a>섹션별</a></p>
             </div>
           </div>
         </div>
 
         <div>
-          <p><a>뉴스검색</a></p>
-          <div>
+          <p><a>뉴스 검색</a></p>
+          <div class="searchMode">
             <div>
-              <p><a>사건</a></p>
+              <p><a>주제</a></p>
             </div>
 
             <div>
-              <p><a>인물</a></p>
+              <p><a>키워드</a></p>
             </div>
-
           </div>
         </div>
 
@@ -64,15 +81,285 @@
       
     </header>
 
-    <article class="content">
+    <article class="content1">
+      <p>주제(2) '포항 지진', '피해'에 대한 검색결과</p>
 
       <section>
-        <p></p>
+        <p>지진피해 큰 한동대 12월 3일까지 휴업 연장…인터넷강의로 대체</p>
+        <p>연합뉴스 손대성 기자</p>
+        <p>2017.11.18</p>
       </section>
+
       <section>
-        
+        <p>포항 지진에 수능 23일로 일주일 연기…대입 일정 '대혼란'(종합)</p>
+        <p>연합뉴스 이재영 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>규모 5.4 충격 그대로…'지진 진앙' 마을 피해 상황은</p>
+        <p>JTBC</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>포항 지진에 통화 3배 급증…"설비 피해 발빠른 복구"</p>
+        <p>뉴스1 주성호 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>무너지고 갈라지고 아수라장… 현 시각 포항 지진 피해 상황</p>
+        <p>국민일보 정지용 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>소방청 "오후 7시 현재 포항 지진으로 14명 중경상"</p>
+        <p>SBS 이성훈 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+    </article>
+
+    <article class="headline">
+      <section>
+        <p>구글·MS 실적도 인플레·강달러에 충격…시간외 거래서 폭락</p>
+        <div class="headlineTheme">헤드라인 주제</div>
+      </section>
+
+      <section>
+        <p>국립외교원 구글 설문 문서로 위장한 北연계 해킹 시도 발생</p>
+        <div class="headlineTheme">헤드라인 주제</div>
+      </section>
+
+      <section>
+        <p>野 1200명 결집해 "검찰독재 규탄" vs 與 "野, 이재명 방탄만 외쳐"</p>
+        <div class="headlineTheme">헤드라인 주제</div>
+      </section>
+      
+      <section>
+        <p>촉법소년 연령 하향: 중학교 1학년도 형사처벌</p>
+        <div class="headlineTheme">헤드라인 주제</div>
       </section>
     </article>
+
+    <article class="content2">
+      <p>野 1200명 결집해 "검찰독재 규탄" vs 與 "野, 이재명 방탄만 외쳐"</p>
+
+      <section>
+        <p>1200명 결집해 '검찰독재 규탄' 외친 민주 vs 국힘 "이재명 방탄만 외쳐"</p>
+        <p>NBN 윤혜주 기자</p>
+        <p>2022.10.26</p>
+        <div class="blue"></div>
+      </section>
+
+      <section>
+        <p>민주당, 1200명 모여 "검찰독재 규탄"…국민의힘 "민생 외면 말라"</p>
+        <p>데일리안 정도원 기자</p>
+        <p>2022.10.26</p>
+        <div class="blue"></div>
+      </section>
+
+      <section>
+        <p>민주당 투쟁모드… “민생파탄 가리려 野 탄압”</p>
+        <p>서울신문 김가현 기자</p>
+        <p>2022.10.27</p>
+        <div class="blue"></div>
+      </section>
+
+      <section>
+        <p>野 1200여명 국회앞 모여 “야당탄압 규탄”</p>
+        <p>동아일보 김은지 기자</p>
+        <p>2022.10.27</p>
+        <div class="blue"></div>
+      </section>
+
+      <section>
+        <p>민주당, 1200명 결집 “尹, 정치계엄·검찰독재” [포착]</p>
+        <p>국민일보 이가현 기자</p>
+        <p>2022.10.26</p>
+        <div class="blue"></div>
+      </section>
+
+      <section>
+        <p>尹, 민주당 시정연설 불참에 “관행 무너져 안타까워”…특검은 반대 시사</p>
+        <p>KBS 박민철 기자</p>
+        <p>2022.10.26</p>
+        <div class="green"></div>
+      </section>
+
+      <section>
+        <p>박홍근 "대장동 특검법안 마련 막바지…일반 특검일 듯"</p>
+        <p>뉴시스 고범준 기자</p>
+        <p>2022.10.26</p>
+        <div class="green"></div>
+      </section>
+
+      <section>
+        <p>이재명, 레고랜드 사태에 "무능·무책임·무대책 3無 정권"</p>
+        <p>뉴시스 고범준 기자</p>
+        <p>2022.10.26</p>
+        <div class="yellow"></div>
+      </section>
+
+      <section>
+        <p>이재명 장남, 불법도박 혐의 검찰송치…성매매는 무혐의</p>
+        <p>뉴시스 박종대 기자</p>
+        <p>2022.10.26</p>
+        <div class="yellow"></div>
+      </section>
+
+      <section>
+        <p>경찰, 이재명 장남 불법도박 혐의 등 검찰 송치</p>
+        <p>OBS 권현 기자</p>
+        <p>2022.10.26</p>
+        <div class="yellow"></div>
+      </section>
+
+    </article>
+
+    <article class="content3_1">
+      <p>주제(1) '수낵 총리'에 대한 검색결과</p>
+
+      <section>
+        <p>英 수낵 신임 내각, 재정계획 발표 11월 17일로 연기</p>
+        <p>한국경제 허세민 기자</p>
+        <p>2017.11.27</p>
+      </section>
+
+      <section>
+        <p>영국 수낵내각 특징은…"친구를 가까이, 적은 더 가까이"</p>
+        <p>연합뉴스 전명훈 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>'인도계' 42세 수낵, 영국 역사상 첫 비백인 총리 등극</p>
+        <p>JTBC 김재현 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>英 수낵, 전 총리 ‘3대 요직 장관’ 모두 재기용</p>
+        <p>동아일보 조은아 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>수낵 英총리 첫 일성은 “통합”… 새 내각 정치색 뺀 ‘빅텐트’</p>
+        <p>서울신문 이슬기 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+      <section>
+        <p>영국 수낵 총리 "트러스 잘못 바로잡을 것"…헌트 재무장관 유임(종합)</p>
+        <p>연합뉴스 최윤정 기자</p>
+        <p>2017.11.15</p>
+      </section>
+
+    </article>
+
+    <article class="content3_2">
+      <p>英 수낵, 전 총리 ‘3대 요직 장관’ 모두 재기용</p>
+      <p>동아일보 조은아 기자</p>
+      <p>
+        헌트 재무-클레벌리 외교 장관 유임<br>
+        사표 낸 브래버먼 내무도 재임명<br>
+        “친구를 가까이, 적은 더 가까이” 해석<br>
+      </p>
+      <p>
+        리시 수낵 신임 영국 총리가 취임 첫날인 25일 내각의 3대 요직인 재무, 외교, 내무장관에 44일 만에 사퇴한 전임자 리즈 트러스 전 총리가 발탁한 인사를 유임하거나 재기용했다. 취임 일성으로 “단결이 아니면 죽음”을 강조했던 그가 ‘탕평 인사’를 했다는 평가가 나온다. 트러스 내각 때 기용돼 수낵 내각에서도 자리를 지킨 주요 인사가 13명에 이른다고 영국 일간 가디언이 전했다.
+<br><br>
+수낵 총리는 이날 트러스 전 총리가 임명한 제러미 헌트 재무장관, 제임스 클레벌리 외교장관을 각각 유임시켰다. 트러스 전 총리가 세계 금융시장에 혼란을 일으킨 감세안에 대한 책임을 물으며 경질한 쿼지 콰텡 장관 후임인 헌트 장관은 수낵 총리를 지지해 왔다. 트러스 내각에서 처음 사표를 던져 트러스 전 총리 조기 사퇴의 촉매제가 된 수엘라 브래버먼 내무장관을 재임명했다. 브래버먼 장관은 사퇴 뒤 수낵 총리를 지지했다.
+<br><br>
+가장 눈길을 모은 인선은 수낵 총리를 반대한 클레벌리 장관의 유임이다. 클레벌리 장관은 보리스 존슨 전 총리의 사퇴로 치러진 집권 보수당 대표 경선에서 수낵 총리가 아닌 트러스 전 총리를 강력히 지지했다. 트러스 전 총리가 물러나자 존슨 전 총리의 복귀를 원한다는 뜻을 밝혔음에도 수낵 총리의 신임을 받았다.
+<br><br>
+트러스 내각의 감세안을 철회했던 헌트 장관은 다음 달 17일로 발표가 연기된 예산안을 짜고 있고 금융시장 대혼란을 막기 위해서라도 유임될 것이란 관측이 지배적이었다. 국방장관에는 트러스 전 총리가 발탁한 벤 월리스가 유임됐고, 주택장관에는 데이비드 캐머런 전 총리의 측근으로 꼽히는 마이클 고브 전 주택장관이 다시 발탁됐다.
+<br><br>
+주요 언론은 수낵 총리가 반대파를 거의 기용하지 않아 보수당의 분열을 가져왔던 트러스 전 총리와 다른 모습을 보여 당내 균열을 서둘러 수습하겠다는 뜻을 강조한 것으로 해석했다. 폴리티코 유럽은 “연속성을 강조하고 복수는 내던진 인사”라고 평가했다. 더타임스는 “친구를 가까이 두고, 적은 더 가까이 뒀다”고 진단했다.
+<br><br>
+수낵 총리와 경쟁하다 막판에 총리 도전을 포기한 페니 모돈트 원내대표가 장관에 임명되지 못해 탕평 인사의 의미를 축소시켰다는 분석도 나온다. 모돈트 원내대표의 측근은 파이낸셜타임스(FT)에 “솔직히 충격을 받았다”며 아쉬움을 표시했다.
+      </p>
+      <div>타임라인</div>
+    </article>
+
+    <article class="latestArticle">
+
+      <section>
+        <p>검찰, 대장동팀 자산 800억원 추징보전 청구</p>
+        <p>한겨레 신정민 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>'레고랜드 사태'에 지자체 채무 보증 신뢰도 하락…춘천시 타격(종합)</p>
+        <p>연합뉴스 이상학 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>삼성 이러다 큰일난다…“역대급 인기폰도 중국에 못 당해” [IT선빵!]</p>
+        <p>해럴드경제 김현일 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>러, 핵 훈련 실시…ICBM·극초음속미사일 등 발사장면 공개(종합)</p>
+        <p>연합뉴스 조성흠 기자</p>
+        <p>2022.10.26</p>
+      </section>
+      
+      <section>
+        <p>국정원 "서해 피격 SI로 확인…中 어선 파악 못해"</p>
+        <p>한국경제 김동현 기자</p>
+        <p>2022.10.26</p>
+      </section>
+      
+      <section>
+        <p>[단독] “데이터센터연합회, 리튬배터리실 별도 설치 의무화 막아”</p>
+        <p>KBS 김민아 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>상주 亞 유일 봉쇄수도원서 의문의 화재…독일인 수도사 숨져</p>
+        <p>중앙일보 정혜진 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>美 대학 “올해 겨울엔 코로나19 폭발적 확산 없을 듯”</p>
+        <p>KBS 정지주 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>공개된 英 수낵 주요 내각 면면…"낯익은 얼굴들로 가득"</p>
+        <p>뉴시스 김태규 기자</p>
+        <p>2022.10.26</p>
+      </section>
+
+      <section>
+        <p>[날씨] 강원 영동 내일 오후~모레 낮까지 비… 내일 한낮 17~21도</p>
+        <p>KBS</p>
+        <p>2022.10.26</p>
+      </section>
+      
+      <section>
+        <p>피아니스트 임윤찬, 세계 최대 클래식 매니지먼트 IMG와 계약</p>
+        <p>한국일보 김소연 기자</p>
+        <p>2022.10.26</p>
+      </section>
+      
+      <section>
+        <p>“이주호 후보자, 딸과 공저한 논문 3편 중복게재”</p>
+        <p>KBS 윤나경 기자</p>
+        <p>2022.10.26</p>
+      </section>
+    </article>
+
+    <img src="img/타임라인.PNG" alt="" class="timeline">
         
   </body>
 </html>
